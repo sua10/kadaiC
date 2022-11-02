@@ -31,7 +31,10 @@ function showClock() {
    var msg = "現在時刻は、" + nowHour + ":" + nowMin + ":" + nowSec + " です。";
    document.getElementById("RealtimeClockArea").innerHTML = msg;
 }
-setInterval('showClock()',1000);
+　　　　　　　　　　　setInterval('showClock()',1000);
+     date1.textContent = month+"/"+ day +"("+days[date.getDay()]+")";
+     time.textContent = hours + ":" + minutes + ":" + seconds + " " + day_night;
+    
      </script>
    </body>
 </html>
