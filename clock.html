@@ -6,6 +6,13 @@
   <p id="RealtimeClockArea">※ここに時計が表示されます。</p>
   
     <script>
+     
+　　　　　　 const date1 = document.querySelector("#date");
+    const time = document.querySelector("#time");
+    let date = new Date();
+    let month = date.getMonth();
+    let day = date.getDate();
+     
 function set2fig(num) {
    // 桁数が1桁だったら先頭に0を加えて2桁に調整する
    var ret;
