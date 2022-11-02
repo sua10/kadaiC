@@ -6,7 +6,7 @@
     <p id="date">※ここに時計が表示されます。</p>
    
     <script>
-     fanction{
+     fanction showClock(){
             window.addEventListener("load", ()=>{
             // 曜日を漢字で表示するため
             let week = ["日", "月", "火", "水", "木", "金", "土"];
@@ -34,7 +34,7 @@
                             " " + hour + ":" + minute + ":" + second;    // 時分秒
         });
      }
-       setInterval('showClock1()',1000);
+       setInterval('showClock()',1000);
      </script>
    </body>
 </html>
