@@ -13,15 +13,15 @@ function set2fig(num) {
    else { ret = num; }
    return ret;
 }
-function showClock2() {
+function showClock() {
    var nowTime = new Date();
    var nowHour = set2fig( nowTime.getHours() );
    var nowMin  = set2fig( nowTime.getMinutes() );
    var nowSec  = set2fig( nowTime.getSeconds() );
    var msg = "現在時刻は、" + nowHour + ":" + nowMin + ":" + nowSec + " です。";
-   document.getElementById("RealtimeClockArea2").innerHTML = msg;
+   document.getElementById("RealtimeClockArea").innerHTML = msg;
 }
-setInterval('showClock2()',1000);
+setInterval('showClock()',1000);
      </script>
    </body>
 </html>
